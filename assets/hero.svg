@@ -1,104 +1,107 @@
 <svg width="1200" height="420" viewBox="0 0 1200 420" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">Rana Geyik — Designer, Developer and Entrepreneur</title>
-  <desc id="desc">An animated experimental banner with colorful orbits, a creative grid and Rana Geyik's professional identity.</desc>
+  <desc id="desc">Forest-green research banner with canopy branches, moss accents and Rana Geyik's professional identity.</desc>
   <defs>
-    <linearGradient id="bg" x1="80" y1="20" x2="1120" y2="400" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#080B16"/>
-      <stop offset="0.48" stop-color="#11102A"/>
-      <stop offset="1" stop-color="#07151B"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="420" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#070f0a"/>
+      <stop offset="0.55" stop-color="#0d1812"/>
+      <stop offset="1" stop-color="#14241a"/>
     </linearGradient>
-    <linearGradient id="spectrum" x1="250" y1="90" x2="980" y2="340" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#FF7A18"/>
-      <stop offset="0.34" stop-color="#FF3D9A"/>
-      <stop offset="0.67" stop-color="#8B5CF6"/>
-      <stop offset="1" stop-color="#2DD4BF"/>
-    </linearGradient>
-    <linearGradient id="textGradient" x1="280" y1="130" x2="930" y2="280" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#FFF7ED"/>
-      <stop offset="0.45" stop-color="#F5D0FE"/>
-      <stop offset="1" stop-color="#CCFBF1"/>
-    </linearGradient>
-    <radialGradient id="glowA">
-      <stop stop-color="#FF3D9A" stop-opacity="0.62"/>
-      <stop offset="1" stop-color="#FF3D9A" stop-opacity="0"/>
+    <radialGradient id="glowMoss" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(220 90) rotate(90) scale(280 220)">
+      <stop stop-color="#a8c94a" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#a8c94a" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="glowB">
-      <stop stop-color="#2DD4BF" stop-opacity="0.55"/>
-      <stop offset="1" stop-color="#2DD4BF" stop-opacity="0"/>
+    <radialGradient id="glowCanopy" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(980 80) rotate(90) scale(320 260)">
+      <stop stop-color="#2f5c3a" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#2f5c3a" stop-opacity="0"/>
     </radialGradient>
-    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
-      <path d="M42 0H0V42" stroke="#FFFFFF" stroke-opacity="0.055"/>
+    <radialGradient id="glowFloor" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(160 360) rotate(90) scale(260 180)">
+      <stop stop-color="#1f3d2a" stop-opacity="0.65"/>
+      <stop offset="1" stop-color="#1f3d2a" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" stroke="#6f9a45" stroke-opacity="0.08"/>
     </pattern>
-    <filter id="blur32" x="-80%" y="-80%" width="260%" height="260%">
-      <feGaussianBlur stdDeviation="32"/>
+    <filter id="soft" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="1.2" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
     </filter>
-    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="7" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-    <clipPath id="frame"><rect width="1200" height="420" rx="32"/></clipPath>
+    <clipPath id="frame">
+      <rect width="1200" height="420" rx="28"/>
+    </clipPath>
   </defs>
-
-  <style>
-    .orbit { transform-box: fill-box; transform-origin: center; animation: spin 18s linear infinite; }
-    .orbit.reverse { animation-direction: reverse; animation-duration: 26s; }
-    .float-a { animation: floatA 7s ease-in-out infinite; }
-    .float-b { animation: floatB 9s ease-in-out infinite; }
-    .dash { stroke-dasharray: 11 16; animation: dash 9s linear infinite; }
-    .cursor { animation: blink 1.05s steps(1,end) infinite; }
-    .pulse { animation: pulse 3.4s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
-    @keyframes spin { to { transform: rotate(360deg); } }
-    @keyframes floatA { 0%,100% { transform: translate(0,0); } 50% { transform: translate(18px,-12px); } }
-    @keyframes floatB { 0%,100% { transform: translate(0,0); } 50% { transform: translate(-14px,16px); } }
-    @keyframes dash { to { stroke-dashoffset: -108; } }
-    @keyframes blink { 0%,48% { opacity:1; } 49%,100% { opacity:0; } }
-    @keyframes pulse { 0%,100% { transform:scale(1); opacity:.7; } 50% { transform:scale(1.28); opacity:1; } }
-    @media (prefers-reduced-motion: reduce) {
-      .orbit,.float-a,.float-b,.dash,.cursor,.pulse { animation:none; }
-    }
-  </style>
 
   <g clip-path="url(#frame)">
     <rect width="1200" height="420" fill="url(#bg)"/>
     <rect width="1200" height="420" fill="url(#grid)"/>
+    <ellipse cx="220" cy="90" rx="280" ry="220" fill="url(#glowMoss)"/>
+    <ellipse cx="980" cy="80" rx="320" ry="260" fill="url(#glowCanopy)"/>
+    <ellipse cx="160" cy="360" rx="260" ry="180" fill="url(#glowFloor)"/>
 
-    <circle class="float-a" cx="132" cy="88" r="118" fill="url(#glowA)" filter="url(#blur32)"/>
-    <circle class="float-b" cx="1080" cy="330" r="142" fill="url(#glowB)" filter="url(#blur32)"/>
-
-    <g opacity="0.85">
-      <ellipse class="orbit" cx="985" cy="154" rx="154" ry="78" transform="rotate(-18 985 154)" stroke="url(#spectrum)" stroke-width="2"/>
-      <ellipse class="orbit reverse" cx="985" cy="154" rx="113" ry="52" transform="rotate(25 985 154)" stroke="#FFFFFF" stroke-opacity="0.22"/>
-      <circle class="pulse" cx="1118" cy="116" r="7" fill="#FF7A18" filter="url(#softGlow)"/>
-      <circle class="pulse" cx="887" cy="204" r="5" fill="#2DD4BF" filter="url(#softGlow)" style="animation-delay:-1.2s"/>
+    <!-- Upper-right canopy branches -->
+    <g opacity="0.85" filter="url(#soft)">
+      <path d="M760 10 C820 55 870 110 900 180 C920 230 950 275 1015 315" stroke="#1f3d2a" stroke-width="1.6" fill="none"/>
+      <path d="M900 180 C860 165 820 175 780 205" stroke="#1f3d2a" stroke-width="1.25" fill="none"/>
+      <path d="M875 130 C920 112 965 128 1005 100" stroke="#2f5c3a" stroke-width="1.25" fill="none"/>
+      <path d="M940 250 C985 232 1030 248 1075 220" stroke="#2f5c3a" stroke-width="1.15" fill="none"/>
+      <ellipse cx="778" cy="210" rx="18" ry="9" transform="rotate(-38 778 210)" fill="#6f9a45" opacity="0.45"/>
+      <ellipse cx="812" cy="192" rx="14" ry="7" transform="rotate(16 812 192)" fill="#6f9a45" opacity="0.4"/>
+      <ellipse cx="1000" cy="108" rx="16" ry="8" transform="rotate(-22 1000 108)" fill="#6f9a45" opacity="0.42"/>
+      <ellipse cx="1028" cy="128" rx="12" ry="6" transform="rotate(24 1028 128)" fill="#6f9a45" opacity="0.38"/>
+      <ellipse cx="1070" cy="228" rx="15" ry="7.5" transform="rotate(-16 1070 228)" fill="#6f9a45" opacity="0.4"/>
+      <ellipse cx="1095" cy="248" rx="11" ry="5.5" transform="rotate(28 1095 248)" fill="#6f9a45" opacity="0.34"/>
+      <ellipse cx="920" cy="158" rx="13" ry="6.5" transform="rotate(8 920 158)" fill="#6f9a45" opacity="0.32"/>
+      <circle cx="860" cy="120" r="2.2" fill="#c9a227" opacity="0.45"/>
+      <circle cx="1045" cy="190" r="1.8" fill="#c9a227" opacity="0.4"/>
     </g>
 
-    <path class="dash" d="M58 342C216 274 275 382 430 320C584 258 662 362 815 304C947 254 1023 290 1150 236" stroke="url(#spectrum)" stroke-opacity="0.55" stroke-width="2"/>
-
-    <g transform="translate(76 62)">
-      <rect x="0" y="0" width="142" height="32" rx="16" fill="#FFFFFF" fill-opacity="0.07" stroke="#FFFFFF" stroke-opacity="0.12"/>
-      <circle cx="18" cy="16" r="5" fill="#2DD4BF" class="pulse"/>
-      <text x="32" y="21" fill="#D1FAE5" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="1.8">BUILD MODE</text>
+    <!-- Lower-left branches -->
+    <g opacity="0.7" filter="url(#soft)">
+      <path d="M-10 380 C90 345 170 310 230 250 C270 210 310 185 370 168" stroke="#1f3d2a" stroke-width="1.5" fill="none"/>
+      <path d="M230 250 C190 232 150 242 110 270" stroke="#2f5c3a" stroke-width="1.2" fill="none"/>
+      <path d="M310 190 C350 172 390 182 430 158" stroke="#1f3d2a" stroke-width="1.15" fill="none"/>
+      <ellipse cx="108" cy="274" rx="14" ry="7" transform="rotate(34 108 274)" fill="#6f9a45" opacity="0.4"/>
+      <ellipse cx="136" cy="256" rx="11" ry="5.5" transform="rotate(-14 136 256)" fill="#6f9a45" opacity="0.35"/>
+      <ellipse cx="368" cy="174" rx="15" ry="7.5" transform="rotate(-24 368 174)" fill="#6f9a45" opacity="0.4"/>
+      <ellipse cx="398" cy="160" rx="12" ry="6" transform="rotate(18 398 160)" fill="#6f9a45" opacity="0.36"/>
+      <ellipse cx="426" cy="164" rx="10" ry="5" transform="rotate(-8 426 164)" fill="#6f9a45" opacity="0.3"/>
+      <circle cx="250" cy="220" r="2" fill="#c9a227" opacity="0.35"/>
     </g>
 
-    <text x="72" y="178" fill="url(#textGradient)" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="76" font-weight="800" letter-spacing="-3">RANA GEYİK</text>
-    <text x="76" y="226" fill="#E9D5FF" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="23" font-weight="600" letter-spacing="1.8">DESIGNER × DEVELOPER × ENTREPRENEUR</text>
-    <rect class="cursor" x="765" y="205" width="3" height="28" rx="1.5" fill="#FF3D9A"/>
-
-    <g transform="translate(76 260)" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13" font-weight="600" letter-spacing="0.8">
-      <rect width="186" height="38" rx="19" fill="#FF3D9A" fill-opacity="0.1" stroke="#FF3D9A" stroke-opacity="0.42"/>
-      <text x="20" y="24" fill="#FBCFE8">AI-NATIVE SYSTEMS</text>
-      <rect x="198" width="176" height="38" rx="19" fill="#8B5CF6" fill-opacity="0.11" stroke="#A78BFA" stroke-opacity="0.42"/>
-      <text x="219" y="24" fill="#DDD6FE">PRODUCT BUILDER</text>
-      <rect x="386" width="166" height="38" rx="19" fill="#2DD4BF" fill-opacity="0.1" stroke="#2DD4BF" stroke-opacity="0.42"/>
-      <text x="407" y="24" fill="#CCFBF1">CREATIVE TECH</text>
+    <!-- Status pill -->
+    <g transform="translate(72 58)">
+      <rect x="0" y="0" width="132" height="28" rx="14" fill="#0b1510" stroke="#2f5c3a" stroke-opacity="0.7"/>
+      <circle cx="18" cy="14" r="4" fill="#a8c94a"/>
+      <text x="32" y="18" fill="#a8c94a" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" letter-spacing="1.6">BUILD MODE</text>
     </g>
 
-    <g transform="translate(934 294) rotate(-7)">
-      <rect width="184" height="70" rx="18" fill="#0B1220" fill-opacity="0.78" stroke="url(#spectrum)" stroke-width="1.4"/>
-      <text x="18" y="29" fill="#F8FAFC" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12" font-weight="800" letter-spacing="1.2">NOW BUILDING</text>
-      <text x="18" y="52" fill="#FDA4AF" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="18" font-weight="800">BİZMOTO ↗</text>
+    <!-- Identity -->
+    <text x="72" y="168" fill="#e6e2d6" font-family="Georgia, 'Times New Roman', serif" font-size="64" font-weight="700" letter-spacing="-1.5">RANA GEYIK</text>
+    <text x="74" y="208" fill="#9a9a88" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="18" letter-spacing="3.2">DESIGNER × DEVELOPER × ENTREPRENEUR</text>
+
+    <!-- Tags -->
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" letter-spacing="1.2">
+      <rect x="72" y="236" width="168" height="30" rx="15" fill="none" stroke="#6f9a45" stroke-opacity="0.85"/>
+      <text x="156" y="255" text-anchor="middle" fill="#a8c94a">AI-NATIVE SYSTEMS</text>
+
+      <rect x="252" y="236" width="148" height="30" rx="15" fill="none" stroke="#2f5c3a"/>
+      <text x="326" y="255" text-anchor="middle" fill="#e6e2d6">PRODUCT BUILDER</text>
+
+      <rect x="412" y="236" width="138" height="30" rx="15" fill="none" stroke="#1f3d2a"/>
+      <text x="481" y="255" text-anchor="middle" fill="#9a9a88">CREATIVE TECH</text>
     </g>
+
+    <!-- Now building card -->
+    <g transform="translate(820 278) rotate(-7)">
+      <rect x="0" y="0" width="250" height="72" rx="14" fill="#0b1510" stroke="#c9a227" stroke-opacity="0.7"/>
+      <text x="22" y="32" fill="#c9a227" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" letter-spacing="1.5">NOW BUILDING</text>
+      <text x="22" y="54" fill="#e6e2d6" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif" font-size="20" font-weight="700">BIZMOTO ↗</text>
+    </g>
+
+    <!-- Bottom signal line -->
+    <path d="M72 340 C220 328 340 352 480 336 C640 318 780 348 980 330" stroke="#6f9a45" stroke-opacity="0.35" stroke-width="1.2" stroke-dasharray="6 10" fill="none"/>
   </g>
-  <rect x="1" y="1" width="1198" height="418" rx="31" stroke="url(#spectrum)" stroke-opacity="0.38" stroke-width="2"/>
 </svg>
-
