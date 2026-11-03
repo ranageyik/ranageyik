@@ -160,6 +160,7 @@
 </p>
 
 <p align="center">
-  <strong>Building useful things with a little magic.</strong><br />
+  <em>Was immer du tun kannst oder träumst es zu können, fang damit an. Kühnheit besitzt Genie, Macht und Magie.</em><br />
+  <sub>— Johann Wolfgang von Goethe</sub><br />
   From Türkiye, to the world. 💜
 </p>
