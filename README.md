@@ -54,57 +54,60 @@
 </table>
 
 <details>
-  <summary>Technology interests · future exploration, not claimed as hands-on</summary>
+  <summary>
+    <strong><code><font color="#39FF14">▶ TECHNOLOGY INTERESTS // FUTURE EXPLORATION</font></code></strong><br />
+    <sub><code>NOT CLAIMED AS HANDS-ON</code></sub>
+  </summary>
   <br />
-  <table>
+  <table border="1" bordercolor="#285A2A" bgcolor="#10120F">
     <tr>
-      <td width="50%" valign="top">
-        <strong>Languages &amp; web foundations</strong><br />
-        JavaScript · PHP · SQL · HTML5 · C · C++ · Java · Rust · Dart
+      <td width="50%" valign="top" bgcolor="#10120F">
+        <strong><code><font color="#39FF14">LANGUAGES &amp; WEB FOUNDATIONS</font></code></strong><br />
+        <font color="#E6FFE6">JavaScript · PHP · SQL · HTML5 · C · C++ · Java · Rust · Dart</font>
       </td>
-      <td width="50%" valign="top">
-        <strong>Frontend</strong><br />
-        Astro · Bootstrap · Sass / SCSS · Material UI · Framer Motion · Zustand · Redux Toolkit · TanStack Query · React Hook Form · Zod
+      <td width="50%" valign="top" bgcolor="#10120F">
+        <strong><code><font color="#39FF14">FRONTEND</font></code></strong><br />
+        <font color="#E6FFE6">Astro · Bootstrap · Sass / SCSS · Material UI · Framer Motion · Zustand · Redux Toolkit · TanStack Query · React Hook Form · Zod</font>
       </td>
     </tr>
     <tr>
-      <td width="50%" valign="top">
-        <strong>Backend &amp; application patterns</strong><br />
-        Express.js · Hono · Laravel · Symfony · Django · FastAPI · Flask · Spring Boot · REST APIs · GraphQL · WebSockets · Authentication · Authorization · Server-Side Rendering · Server Actions · Background Jobs
+      <td width="50%" valign="top" bgcolor="#10120F">
+        <strong><code><font color="#39FF14">BACKEND &amp; APPLICATION PATTERNS</font></code></strong><br />
+        <font color="#E6FFE6">Express.js · Hono · Laravel · Symfony · Django · FastAPI · Flask · Spring Boot · REST APIs · GraphQL · WebSockets · Authentication · Authorization · Server-Side Rendering · Server Actions · Background Jobs</font>
       </td>
-      <td width="50%" valign="top">
-        <strong>Databases &amp; data</strong><br />
-        MySQL · SQLite · MongoDB · Redis · Supabase · Prisma ORM · Drizzle ORM · Elasticsearch · Database Design · Relational Modeling · Data Modeling · CRUD · Query Optimization · Database Migrations
-      </td>
-    </tr>
-    <tr>
-      <td width="50%" valign="top">
-        <strong>AI &amp; machine learning</strong><br />
-        OpenAI API · Anthropic API · Gemini API · LLM Integration · Prompt Engineering · AI Agents · Agentic Workflows · RAG · Embeddings · Vector Databases · LangChain · LlamaIndex · Hugging Face · Ollama · MCP · AI-Assisted Development · AI Automation · Structured Outputs · Tool Calling
-      </td>
-      <td width="50%" valign="top">
-        <strong>Infrastructure &amp; delivery</strong><br />
-        Linux · Ubuntu · WSL2 · Docker · Docker Compose · GitHub Actions · CI/CD · Vercel · Netlify · Cloudflare · Nginx · Apache · AWS · Google Cloud · Azure · Environment Configuration · Deployment · Monitoring · Infrastructure as Code
+      <td width="50%" valign="top" bgcolor="#10120F">
+        <strong><code><font color="#39FF14">DATABASES &amp; DATA</font></code></strong><br />
+        <font color="#E6FFE6">MySQL · SQLite · MongoDB · Redis · Supabase · Prisma ORM · Drizzle ORM · Elasticsearch · Database Design · Relational Modeling · Data Modeling · CRUD · Query Optimization · Database Migrations</font>
       </td>
     </tr>
     <tr>
-      <td width="50%" valign="top">
-        <strong>Testing &amp; code quality</strong><br />
-        Jest · Vitest · Playwright · Cypress · React Testing Library · PHPUnit · Pytest · ESLint · Prettier · TypeScript Strict Mode · Static Analysis · Integration Testing · End-to-End Testing · Test Automation
+      <td width="50%" valign="top" bgcolor="#10120F">
+        <strong><code><font color="#39FF14">AI &amp; MACHINE LEARNING</font></code></strong><br />
+        <font color="#E6FFE6">OpenAI API · Anthropic API · Gemini API · LLM Integration · Prompt Engineering · AI Agents · Agentic Workflows · RAG · Embeddings · Vector Databases · LangChain · LlamaIndex · Hugging Face · Ollama · MCP · AI-Assisted Development · AI Automation · Structured Outputs · Tool Calling</font>
       </td>
-      <td width="50%" valign="top">
-        <strong>Design &amp; creative technology</strong><br />
-        Adobe Photoshop · Adobe Illustrator · Adobe Premiere Pro · Blender · UI/UX Design · Design Systems · Responsive Design · Prototyping · Wireframing · Interaction Design · Motion Design · Visual Storytelling
+      <td width="50%" valign="top" bgcolor="#10120F">
+        <strong><code><font color="#39FF14">INFRASTRUCTURE &amp; DELIVERY</font></code></strong><br />
+        <font color="#E6FFE6">Linux · Ubuntu · WSL2 · Docker · Docker Compose · GitHub Actions · CI/CD · Vercel · Netlify · Cloudflare · Nginx · Apache · AWS · Google Cloud · Azure · Environment Configuration · Deployment · Monitoring · Infrastructure as Code</font>
       </td>
     </tr>
     <tr>
-      <td width="50%" valign="top">
-        <strong>Commerce &amp; product engineering</strong><br />
-        WordPress · WooCommerce · Shopify · Headless Commerce · Product Catalog Architecture · PIM · Inventory Systems · Marketplace Architecture · Search &amp; Filtering · Payment Integrations · API Integrations · Authentication Systems · Role-Based Access Control · SaaS Architecture · Multi-Tenant Systems · Analytics &amp; Dashboards
+      <td width="50%" valign="top" bgcolor="#10120F">
+        <strong><code><font color="#39FF14">TESTING &amp; CODE QUALITY</font></code></strong><br />
+        <font color="#E6FFE6">Jest · Vitest · Playwright · Cypress · React Testing Library · PHPUnit · Pytest · ESLint · Prettier · TypeScript Strict Mode · Static Analysis · Integration Testing · End-to-End Testing · Test Automation</font>
       </td>
-      <td width="50%" valign="top">
-        <strong>Developer workflow</strong><br />
-        VS Code · Cursor · GitHub Copilot · Postman · Insomnia · npm · yarn · Vite · Webpack · Turbopack · Swagger / OpenAPI · Notion · Linear · Jira · Redmine
+      <td width="50%" valign="top" bgcolor="#10120F">
+        <strong><code><font color="#39FF14">DESIGN &amp; CREATIVE TECHNOLOGY</font></code></strong><br />
+        <font color="#E6FFE6">Adobe Photoshop · Adobe Illustrator · Adobe Premiere Pro · Blender · UI/UX Design · Design Systems · Responsive Design · Prototyping · Wireframing · Interaction Design · Motion Design · Visual Storytelling</font>
+      </td>
+    </tr>
+    <tr>
+      <td width="50%" valign="top" bgcolor="#10120F">
+        <strong><code><font color="#39FF14">COMMERCE &amp; PRODUCT ENGINEERING</font></code></strong><br />
+        <font color="#E6FFE6">WordPress · WooCommerce · Shopify · Headless Commerce · Product Catalog Architecture · PIM · Inventory Systems · Marketplace Architecture · Search &amp; Filtering · Payment Integrations · API Integrations · Authentication Systems · Role-Based Access Control · SaaS Architecture · Multi-Tenant Systems · Analytics &amp; Dashboards</font>
+      </td>
+      <td width="50%" valign="top" bgcolor="#10120F">
+        <strong><code><font color="#39FF14">DEVELOPER WORKFLOW</font></code></strong><br />
+        <font color="#E6FFE6">VS Code · Cursor · GitHub Copilot · Postman · Insomnia · npm · yarn · Vite · Webpack · Turbopack · Swagger / OpenAPI · Notion · Linear · Jira · Redmine</font>
       </td>
     </tr>
   </table>
